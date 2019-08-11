@@ -9,6 +9,7 @@
     "server": "node src/api/server.js"
   },
   "dependencies": {
+    "bulma": "^0.7.5",
     "core-js": "^2.6.5",
     "express": "^4.17.1",
     "mongodb": "^3.3.0-beta2",
