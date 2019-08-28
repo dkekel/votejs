@@ -1,9 +1,10 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <img alt="Vue logo" src="../assets/vote_logo.png">
+    <h1>CERN Spring Campus voting system</h1>
     <h3>Please select the interactive talk you are attending:</h3>
-    <ul>
-      <li>David vs. Goliath: MeteorJS vs. Spring Boot</li>
+    <ul v-for="talk in talks" v-bind:key="talk.id">
+      <li><a :href="`/vote/${talk.id}`">{{talk.title}}</a></li>
     </ul>
   </div>
 </template>
@@ -11,8 +12,10 @@
 <script>
 export default {
   name: 'Main',
-  props: {
-    msg: String
+  data () {
+      return {
+          talks: [{id: 1, title: 'David vs. Goliath: MeteorJS vs. Spring Boot'}]
+      }
   }
 }
 </script>

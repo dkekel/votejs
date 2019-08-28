@@ -1,18 +1,13 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/vote_logo.png">
-    <Main msg="CERN Spring Campus voting system"/>
+    <router-view/>
   </div>
 </template>
 
 <script>
-import Main from './components/Main.vue'
 
 export default {
-  name: 'app',
-  components: {
-    Main: Main
-  }
+  name: 'app'
 }
 </script>
 
