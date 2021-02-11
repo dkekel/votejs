@@ -9,7 +9,7 @@
     "server": "node src/api/server.js"
   },
   "dependencies": {
-    "apexcharts": "^3.8.4",
+    "apexcharts": "^3.24.0",
     "bulma": "^0.7.5",
     "core-js": "^2.6.5",
     "express": "^4.17.1",
